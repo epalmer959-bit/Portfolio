@@ -31,7 +31,7 @@
       min-height: 100vh;
     }
 
-    /* ── HEADER ── */
+   
     header {
       padding: 5rem 2rem 3rem;
       max-width: 960px;
@@ -74,7 +74,7 @@
     }
 
 
-    /* ── SECTIONS ── */
+
     .section {
       max-width: 960px;
       margin: 0 auto;
@@ -105,7 +105,7 @@
       letter-spacing: 0.04em;
     }
 
-    /* ── GRID ── */
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -116,7 +116,7 @@
       grid-template-columns: 1fr;
     }
 
-    /* ── CARD ── */
+
     .card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -163,7 +163,7 @@
       line-height: 1.65;
     }
 
-    /* ── LIGHTBOX ── */
+
     #lightbox {
       display: none;
       position: fixed;
@@ -212,7 +212,7 @@
 
     #lightbox-close:hover { color: #fff; border-color: #fff; }
 
-    /* ── FOOTER ── */
+
     footer {
       max-width: 960px;
       margin: 0 auto;
@@ -237,7 +237,7 @@
 <body>
 
   <header>
-    <p class="eyebrow">Geoscience Portfolio</p>
+    <p class="eyebrow">Portfolio</p>
     <h1>Ethan Palmer<br /><span>BSc Earth Science</span></h1>
     <p class="intro">
       Final-year Earth Science student at the <strong>University of Manchester</strong>.
@@ -252,7 +252,7 @@
   <section class="section" id="seismic">
     <div class="section-header">
       <span class="section-label">01</span>
-      <h2>Seismic Interpretation</h2>
+      <h2>Seismic Interpretation - Troll Gas Field, Norway</h2>
     </div>
     <div class="grid">
 
@@ -261,8 +261,7 @@
         <div class="card-body">
           <p class="card-title">3D Top Resevoir</p>
           <p class="card-caption">
-            <!-- EDIT CAPTION BELOW -->
-            2D seismic section with direct hydrocarbon indicator annotation — bright spots, flatspots, polarity reversal, and top reservoir pick identified as fluid contact indicators.
+            Top resevoir surface modelled using 3D seismic data. Includes difference map of two top resevoir surfaces, where one has been interpolated using fault constraints and the other has not.
           </p>
         </div>
       </div>
@@ -272,8 +271,7 @@
         <div class="card-body">
           <p class="card-title">Interpreted Seismic Section</p>
           <p class="card-caption">
-            <!-- EDIT CAPTION BELOW -->
-            Autotracked horizon amplitude extraction used to identify lateral lithology and fluid variations across the survey area.
+            Annoated seismic section identifying different fluid effects.
           </p>
         </div>
       </div>
@@ -283,8 +281,7 @@
         <div class="card-body">
           <p class="card-title">Gas Column Thickness Map</p>
           <p class="card-caption">
-            <!-- EDIT CAPTION BELOW -->
-            Fault-constrained TR surface displayed as a structure contour map, showing elevation time (ms) and major fault trends across the survey.
+            Thickness map between top resevoir and regional flatspot (gas column thickness), which was then used to calculate GRV and pore volume.
           </p>
         </div>
       </div>
@@ -294,8 +291,7 @@
         <div class="card-body">
           <p class="card-title">Water and Gas Leg Map</p>
           <p class="card-caption">
-            <!-- EDIT CAPTION BELOW -->
-            Thickness variation between interpreted horizons displayed in time (ms), with well trajectories, comparing fault-constrained and unconstrained surface interpretations.
+            The top resevoir displayed as a positive or negative acoustic impedance change. A negative impedance contrast (blue) indcates formational brines, whereas a positive impedance contrast (red) indicates the gas-leg.
           </p>
         </div>
       </div>
@@ -305,8 +301,7 @@
         <div class="card-body">
           <p class="card-title">Fault Sticks - Variance Attribute</p>
           <p class="card-caption">
-            <!-- EDIT CAPTION BELOW -->
-            Fault network extracted from seismic variance attribute, displayed in 3D with well positions, used to constrain structural interpretation.
+            Fault stick interpretation completed using the variance attribute in a 3D seismic data set. Highlights discontinuties in strata, which are likely offset by faulting.
           </p>
         </div>
       </div>
@@ -314,10 +309,10 @@
       <div class="card" onclick="openLightbox('PETREL6.png', this)">
         <img src="PETREL6.png" alt="3D Top Resevoir (2)" loading="lazy" />
         <div class="card-body">
-          <p class="card-title">3D Top Resevoir</p>
+          <p class="card-title">3D Top Resevoir (2)</p>
           <p class="card-caption">
-            <!-- EDIT CAPTION BELOW -->
-            Isochron map showing reservoir thickness variation across fault blocks, derived from fault-constrained TR surface and flatspot surface picks for east and central blocks.
+       
+           Top resevoir surface viewed from top-down.
           </p>
         </div>
       </div>
@@ -340,7 +335,7 @@
         <div class="card-body">
           <p class="card-title">Petrophysical Interpretation 1</p>
           <p class="card-caption">
-            <!-- EDIT CAPTION BELOW -->
+           
             Full petrophysical interpretation including GR cutoff, neutron-density crossplot fluid identification, reservoir zonation, and net-to-gross calculation with fluid contacts (GDT, ODT, WUT).
           </p>
         </div>
@@ -351,8 +346,8 @@
         <div class="card-body">
           <p class="card-title">Petrophysical Interpretation 2</p>
           <p class="card-caption">
-            <!-- EDIT CAPTION BELOW -->
-            Lithology and fluid zone picks (gas, oil, brine) across a multi-tool wireline suite, with caliper washout identification indicating poor hole conditions.
+         
+            Lithology and fluid zone picks (gas, oil, brine) across a multi-tool wireline suite, with caliper washout.
           </p>
         </div>
       </div>
@@ -375,8 +370,8 @@
         <div class="card-body">
           <p class="card-title">Ardwick Core — Section 1 (20–32m)</p>
           <p class="card-caption">
-            <!-- EDIT CAPTION BELOW -->
-            Facies-coded stratigraphic log constructed from core, recording lithology, sedimentary structures, and diagenetic features including reduction spots. Produced as part of undergraduate dissertation research.
+         
+            Facies-coded stratigraphic log constructed from the Ardwick Core, recovered from Edgar Norton in Ardwick, Manchester. Logs the Halesowen Formation of the Warwickshire Group, which was deposited in a fluvial-lacrustine during the Late Carboniferous.
           </p>
         </div>
       </div>
@@ -386,8 +381,8 @@
         <div class="card-body">
           <p class="card-title">Ardwick Core — Section 2 (32–44.5m)</p>
           <p class="card-caption">
-            <!-- EDIT CAPTION BELOW -->
-            Facies-coded stratigraphic log constructed from core, recording lithology, sedimentary structures, and diagenetic features including reduction spots. Produced as part of undergraduate dissertation research.
+          
+            Facies-coded stratigraphic log constructed from the Ardwick Core, recovered from Edgar Norton in Ardwick, Manchester. Logs the Halesowen Formation of the Warwickshire Group, which was deposited in a fluvial-lacrustine during the Late Carboniferous.
           </p>
         </div>
       </div>
@@ -397,8 +392,9 @@
         <div class="card-body">
           <p class="card-title">Ardwick Core — Section 3 (44.5–53m)</p>
           <p class="card-caption">
-            <!-- EDIT CAPTION BELOW -->
-            Facies-coded stratigraphic log constructed from core, recording lithology, sedimentary structures, and diagenetic features including reduction spots. Produced as part of undergraduate dissertation research.
+        
+            
+            Facies-coded stratigraphic log constructed from the Ardwick Core, recovered from Edgar Norton in Ardwick, Manchester. Logs the Halesowen Formation of the Warwickshire Group, which was deposited in a fluvial-lacrustine during the Late Carboniferous.
           </p>
         </div>
       </div>
@@ -408,8 +404,9 @@
         <div class="card-body">
           <p class="card-title">Ardwick Core — Section 4 (53–60.5m)</p>
           <p class="card-caption">
-            <!-- EDIT CAPTION BELOW -->
-            Facies-coded stratigraphic log constructed from core, recording lithology, sedimentary structures, and diagenetic features including reduction spots. Produced as part of undergraduate dissertation research.
+         
+            
+            Facies-coded stratigraphic log constructed from the Ardwick Core, recovered from Edgar Norton in Ardwick, Manchester. Logs the Halesowen Formation of the Warwickshire Group, which was deposited in a fluvial-lacrustine during the Late Carboniferous.
           </p>
         </div>
       </div>
@@ -422,7 +419,7 @@
     <span>epalmer959-bit.github.io/Ethan-Palmer---Portfolio</span>
   </footer>
 
-  <!-- ── LIGHTBOX ── -->
+
   <div id="lightbox">
     <button id="lightbox-close" onclick="closeLightbox()">ESC / CLOSE</button>
     <img id="lightbox-img" src="" alt="" />
